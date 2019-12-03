@@ -1,0 +1,91 @@
+:root {
+    --orange: #fe4300;
+    --blue: #01bcff;
+  }
+  body{
+    background:black;
+  }
+  .container {
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;
+    background: black;
+    padding-top:200px;
+  }
+  .orange {
+    background: url(https://media.giphy.com/media/9PcEY5kYpR3QrQxxhL/giphy.gif);
+    background-size: contain;
+    width: 100%;
+    height: 50%;
+    font-size: 7rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: transparent;
+    background-position: top-left;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    background-clip: text;
+    animation: orange 3s infinite reverse cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .blue {
+    background: url(https://media.giphy.com/media/l3fQ9icfExRfiePrq/giphy.gif);
+    background-size: contain;
+    width: 100%;
+    height: 50%;
+    font-size: 7rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    background-position: bottom-right;
+    text-align: center;
+    padding: 0 auto;
+    overflow: hidden;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    animation: blue 3s infinite cubic-bezier(0.755, 0.05, 0.855, 0.06) reverse;
+  }
+  .orangeContainer {
+    background: url(https://media.giphy.com/media/Q61LJj43H48z1FIK4X/giphy.gif);
+    transform: rotate(45deg);
+    animation: orangeContainer 4s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .blueContainer {
+    background: url(https://media.giphy.com/media/fnJWA6rIGgYmlksSEN/giphy.gif);
+    animation: blueContainer 4s infinite cubic-bezier(0.39, 0.575, 0.565, 1)
+      alternate-reverse;
+  }
+  @keyframes orange {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes orangeContainer {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  @keyframes blueContainer {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes blue {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
