@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Show a recipe</title>
+  </head>
+  <body>
+    <!-- make a function that builds out a query string for a url -->
+    <div id="wrapper">
+      <h1 id="title">Show a recipe</h1>
+      <p id="p">Type in ingredients separated by a comma</p>
+      <div id="input-container">
+        <input type="text" name="ingredients" id="ingredients" /><label
+          >Ingredients</label
+        >
+      </div>
+      <button id="btn">Submit</button>
+    </div>
+    <div id="results">
+      <h1>Search Results</h1>
+      <h2 id="resultTitle"></h2>
+      <h2>Ingredients:</h2>
+      <h2 id="resultIngredients"></h2>
+      <img id="resultPic" />
+      <h3>Parsed URL:</h3>
+      <h3 id="resultURL"></h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

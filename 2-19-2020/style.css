@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("food.jpg");
+  background-position: center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: ivory;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrapper {
+  height: 600px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.89);
+}
+#title {
+  margin-bottom: 40px;
+}
+#p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+#input-container {
+  position: relative;
+  margin-bottom: 25px;
+}
+#input-container label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+#input-container input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e74c3c;
+}
+#input-container input {
+  border: 0;
+  border-bottom: 1px solid #555;
+  background: transparent;
+  width: 100%;
+  padding: 8px 0 5px 0;
+  font-size: 16px;
+  color: #fff;
+}
+#btn {
+  color: #fff;
+  background-color: #e76d60;
+  outline: none;
+  border: 0;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+#btn:hover {
+  background-color: #eea9a1;
+}
+#btn:active {
+  background-color: lightcoral;
+}
+#input-container input:focus ~ label,
+#input-container input:valid ~ label {
+  top: -12px;
+  font-size: 12px;
+}
+#results {
+  height: 600px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.89);
+  text-align: center;
+}
