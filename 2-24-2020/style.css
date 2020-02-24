@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  color: #6e5773;
+  background-color: #e9e1cc;
+}
+.wrapper {
+  height: 60%;
+  display: flex;
+  flex-flow: column wrap;
+  width: 65%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.mission {
+  font-size: 20px;
+  text-align: center;
+}
+.entered,
+.youranswer {
+  text-align: center;
+  font-size: 30px;
+}
+.problem,
+.answer {
+  font-size: 30px;
+}
+#numInput {
+  height: 45px;
+  font-size: 20px;
+  text-align: center;
+  width: 150px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#btn {
+  font-size: 20px;
+  display: inline-block;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.9);
+  background: #d45079;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+  text-shadow: -1px -1px 0 rgba(15, 73, 168, 0.66);
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+#btn:active {
+  background-color: #ea9085;
+}
+#btn:hover {
+  background-color: rgb(107, 133, 133);
+}
