@@ -24,6 +24,7 @@ body {
   background-image: url("https://i.ibb.co/Z81xRXB/zipper.jpg");
   background-position: center;
   opacity: 0.3;
+  background-color: rgb(206, 199, 199);
   z-index: -1;
 }
 .wrap1 {
