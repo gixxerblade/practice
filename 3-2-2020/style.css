@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-image: url("https://i.ibb.co/WtFb4f5/pyramid.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  background-color: rgb(206, 199, 199);
+  z-index: -1;
+}
+.wrap1 {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 6rem;
+  align-items: stretch;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.wrap2 {
+  display: flex;
+  flex-flow: column wrap;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+#button {
+  width: 5rem;
+  align-self: center;
+}
+#pyramidInput {
+  width: 6rem;
+  height: 3rem;
+  font-size: 3rem;
+  text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.pyramid {
+  transition: 0.3s linear;
+}
