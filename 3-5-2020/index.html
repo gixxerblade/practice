@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Local Storage</title>
+  </head>
+  <body>
+    <div class="wrap1">
+      <h1 class="title">Add data to local storage</h1>
+      <h3 class="explain">
+        Enter a filename and some data and press submit to store this data
+        locally
+      </h3>
+    </div>
+    <div class="wrap2">
+      <input type="text" name="" id="filename-input" /><label
+        for=""
+        class="filename-lable"
+        >Filename</label
+      >
+      <input type="text" name="" id="data-input" /><label
+        for=""
+        class="data-label"
+        >Data</label
+      >
+      <button type="submit" id="btn">Submit</button>
+    </div>
+    <div class="wrap3">
+      <table id="table" class="tg">
+        <tr>
+          <th class="tg-c6of">Filename</th>
+          <th class="tg-c6of">Data</th>
+        </tr>
+        <tr>
+          <td id="filename-output" class="tg-c6of"></td>
+          <td id="data-output" class="tg-c6of"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="error"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
