@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 65%;
+  height: 75vh;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+}
+.wrap1 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: 1rem;
+  height: 6rem;
+  align-items: stretch;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.title {
+  margin: 1rem;
+}
+.instructions {
+  margin: 1rem;
+}
+.wrap2 {
+  display: flex;
+  flex-flow: column wrap;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+.number-system,
+.number-system-description {
+  margin: 0.5rem;
+}
+#printResult {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+#inputNumber {
+  width: 3rem;
+  font-size: 2rem;
+  text-align: center;
+}
+#btn {
+  font-size: 1.5rem;
+}
+.bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-image: url("https://i.ibb.co/WBBGN9f/random.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  background-color: rgb(206, 199, 199);
+  z-index: -1;
+}
