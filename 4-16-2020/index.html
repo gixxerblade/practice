@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="number" class="number"></div>
+      <div id="blank">
+        <svg
+          id="bomb-body"
+          width="128"
+          height="128"
+          viewBox="0 0 128 128"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_d)">
+            <circle cx="64" cy="60" r="60" fill="black" />
+          </g>
+          <defs>
+            <filter
+              id="filter0_d"
+              x="0"
+              y="0"
+              width="128"
+              height="128"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              />
+              <feOffset dy="4" />
+              <feGaussianBlur stdDeviation="2" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow"
+                result="shape"
+              />
+            </filter>
+          </defs>
+        </svg>
+
+        <svg
+          id="bomb-square"
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_d)">
+            <rect
+              x="4"
+              y="19.799"
+              width="28"
+              height="28"
+              transform="rotate(-45 4 19.799)"
+              fill="black"
+            />
+            <rect
+              x="4.70711"
+              y="19.799"
+              width="27"
+              height="27"
+              transform="rotate(-45 4.70711 19.799)"
+              stroke="black"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_d"
+              x="0"
+              y="0"
+              width="47.598"
+              height="47.598"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              />
+              <feOffset dy="4" />
+              <feGaussianBlur stdDeviation="2" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow"
+                result="shape"
+              />
+            </filter>
+          </defs>
+        </svg>
+
+        <svg
+          id="fuse"
+          width="215"
+          height="122"
+          viewBox="0 0 215 122"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path class="fuse"
+            d="M2 111C9.97342 114.112 17.0182 116.412 25.4444 117.944C34.5735 119.604 46.8519 120.831 55.4444 116.778C64.594 112.462 74.7048 109.846 83.0556 104C92.263 97.5548 99.631 90.3526 107.056 82C113.469 74.7844 118.494 65.9533 124 58C128.865 50.9727 135.123 41.4476 137 33C137.829 29.2698 141.398 21.9268 144 19C147.805 14.7198 149.762 10.344 154.778 7C160.767 3.00706 169.195 1.43215 176.5 3.05556C184.322 4.79375 189.97 8.70729 197 12.2222C200.595 14.0199 211.367 19.7332 213 23"
+            stroke="black"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="bevel"
+          />
+        </svg>
+
+        <div id="fuse-flame">
+          <svg
+            class="animation"
+            id="yellow-fuse-flame"
+            width="41"
+            height="37"
+            viewBox="0 0 41 37"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.96486 15.7247L9.45208 18.0222L1 18.962L9.45208 20.6329L3.89617 24.7579L11.107 23.7136L8.97923 28.0475L13.1757 26.2722L12.3482 31.2326L15.599 28.4652L14.2987 33.0601L19.7955 29.3006L21.8642 34L24.8786 29.3006L27.893 33.0601L28.4249 28.4652L30.4345 30.3449V26.8987L33.9808 28.4652L33.0351 24.7579L35.6949 26.0111L33.9808 23.1392H38L35.1629 18.962L38 17.5L35.1629 15.7247L38 12.5918L33.508 11.8085L35.6949 10.1377H31.9121L33.508 7.05696L30.4345 8.93671L31.9121 5.22943L29.2524 8.10127L28.8978 5.85601L26.77 7.05696L24.8786 2.56646L21.8642 6.27373V1L20.623 6.63924L19.0863 4.39399V7.05696L17.1358 4.39399L16.1901 7.84019L12.3482 4.39399L13.5304 9.51108L9.45208 7.05696L11.5208 11.8085L8.97923 10.5554L10.1613 13.8972L7.67891 13.375L9.45208 16.2991L5.96486 15.7247Z"
+              fill="#FFFF00"
+              stroke="#FFFF00"
+              stroke-width="2"
+            />
+          </svg>
+
+          <svg
+            class="animation"
+            id="orange-fuse-flame"
+            width="43"
+            height="39"
+            viewBox="0 0 43 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.23323 16.6171L9.90895 19.0538L1 20.0506L9.90895 21.8228L4.05272 26.1978L11.6534 25.0902L9.41054 29.6867L13.8339 27.8038L12.9617 33.0649L16.3882 30.1297L15.0176 35.0032L20.8115 31.0158L22.992 36L26.1693 31.0158L29.3466 35.0032L29.9073 30.1297L32.0256 32.1234V28.4684L35.7636 30.1297L34.7668 26.1978L37.5703 27.5269L35.7636 24.481H40L37.0096 20.0506L40 18.5L37.0096 16.6171L40 13.2943L35.2652 12.4636L37.5703 10.6915H33.5831L35.2652 7.42405L32.0256 9.41772L33.5831 5.48576L30.7796 8.53165L30.4058 6.15032L28.1629 7.42405L26.1693 2.66139L22.992 6.59335V1L21.6837 6.98101L20.0639 4.59968V7.42405L18.008 4.59968L17.0112 8.25475L12.9617 4.59968L14.2077 10.0269L9.90895 7.42405L12.0895 12.4636L9.41054 11.1345L10.6565 14.6788L8.03994 14.125L9.90895 17.2263L6.23323 16.6171Z"
+              stroke="#FFA500"
+              stroke-width="2"
+            />
+          </svg>
+
+          <svg
+            class="animation"
+            id="red-fuse-flame"
+            width="45"
+            height="43"
+            viewBox="0 0 45 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.63578 18.4019L10.5942 21.1171L1 22.2278L10.5942 24.2025L4.28754 29.0775L12.4728 27.8434L10.0575 32.9652L14.8211 30.8671L13.8818 36.7294L17.5719 33.4589L16.0958 38.8892L22.3355 34.4462L24.6837 40L28.1054 34.4462L31.5272 38.8892L32.131 33.4589L34.4121 35.6804V31.6076L38.4377 33.4589L37.3642 29.0775L40.3834 30.5585L38.4377 27.1646H43L39.7796 22.2278L43 20.5L39.7796 18.4019L43 14.6994L37.901 13.7737L40.3834 11.7991H36.0895L37.901 8.15823L34.4121 10.3797L36.0895 5.99842L33.0703 9.3924L32.6677 6.73892L30.2524 8.15823L28.1054 2.85127L24.6837 7.23259V1L23.2748 7.66456L21.5304 5.01108V8.15823L19.3163 5.01108L18.2428 9.08386L13.8818 5.01108L15.2236 11.0585L10.5942 8.15823L12.9425 13.7737L10.0575 12.2927L11.3994 16.2421L8.58147 15.625L10.5942 19.0807L6.63578 18.4019Z"
+              stroke="#FF0000"
+              stroke-width="2"
+              stroke-miterlimit="4"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="explosion active" id="explosion">
+      <svg
+        id="red-explosion"
+        width="319"
+        height="323"
+        viewBox="0 0 319 323"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M43 142L72.5 164L1 173L72.5 189L25.5 228.5L86.5 218.5L68.5 260L104 243L97 290.5L124.5 264L113.5 308L160 272L177.5 317L203 272L228.5 308L233 264L250 282V249L280 264L272 228.5L294.5 240.5L280 213H314L290 173L314 159L290 142L314 112L276 104.5L294.5 88.5H262.5L276 59L250 77L262.5 41.5L240 69L237 47.5L219 59L203 16L177.5 51.5V1L167 55L154 33.5V59L137.5 33.5L129.5 66.5L97 33.5L107 82.5L72.5 59L90 104.5L68.5 92.5L78.5 124.5L57.5 119.5L72.5 147.5L43 142Z"
+          stroke="#FF0000"
+          stroke-width="5"
+          stroke-miterlimit="4"
+          stroke-linejoin="miter"
+        />
+      </svg>
+
+      <svg
+        id="orange-explosion"
+        width="299"
+        height="297"
+        viewBox="0 0 299 297"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M40.3163 130.399L67.9313 150.589L1 158.848L67.9313 173.532L23.9345 209.782L81.0367 200.604L64.1869 238.69L97.4185 223.089L90.8658 266.68L116.609 242.361L106.312 282.741L149.84 249.703L166.222 291L190.093 249.703L213.963 282.741L218.176 242.361L234.089 258.88V228.595L262.173 242.361L254.684 209.782L275.746 220.794L262.173 195.557H294L271.534 158.848L294 146L271.534 130.399L294 102.867L258.428 95.9842L275.746 81.3006H245.791L258.428 54.2278L234.089 70.7468L245.791 38.1677L224.728 63.4051L221.92 43.674L205.07 54.2278L190.093 14.7658L166.222 47.3449V1L156.393 50.557L144.224 30.8259V54.2278L128.778 30.8259L121.289 61.1108L90.8658 30.8259L100.227 75.7943L67.9313 54.2278L84.3131 95.9842L64.1869 84.9715L73.5479 114.339L53.8898 109.75L67.9313 135.446L40.3163 130.399Z"
+          stroke="#FFA500"
+          stroke-width="5"
+        />
+      </svg>
+
+      <svg
+        id="yellow-explosion"
+        width="278"
+        height="274"
+        viewBox="0 0 278 274"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M37.23 119.244L62.6773 137.693L1 145.241L62.6773 158.658L22.1342 191.783L74.754 183.397L59.2268 218.199L89.8498 203.943L83.8115 243.777L107.534 221.554L98.0447 258.453L138.157 228.263L153.252 266L175.249 228.263L197.246 258.453L201.128 221.554L215.792 236.649V208.975L241.671 221.554L234.77 191.783L254.179 201.847L241.671 178.785H271L250.297 145.241L271 133.5L250.297 119.244L271 94.0854L238.22 87.7959L254.179 74.3782H226.575L238.22 49.6392L215.792 64.7342L226.575 34.9636L207.166 58.0253L204.578 39.9953L189.051 49.6392L175.249 13.5791L153.252 43.3497V1L144.195 46.2848L132.981 28.2547V49.6392L118.748 28.2547L111.847 55.9288L83.8115 28.2547L92.4377 69.3465L62.6773 49.6392L77.7732 87.7959L59.2268 77.7326L67.853 104.568L49.738 100.375L62.6773 123.856L37.23 119.244Z"
+          fill="white"
+          stroke="#FFFF00"
+          stroke-width="7"
+        />
+      </svg>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

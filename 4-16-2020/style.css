@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#container {
+  width: 100%;
+  height: 15rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blank {
+  position: absolute;
+  width: 30rem;
+  height: 20rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+@media only screen and (max-width: 415px) {
+  #blank {
+    width: 85%;
+  }
+}
+/* Ellipse 1 */
+#bomb-body {
+  position: absolute;
+  border-radius: 60px;
+  width: 120px;
+  height: 120px;
+  left: 244px;
+  top: 57px;
+  background: #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Rectangle 1 */
+#bomb-square {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 244px;
+  top: 60px;
+  background: #000000;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(-45deg);
+}
+.number {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  z-index: 1;
+  font-size: 2rem;
+  font-weight: 600;
+}
+/* Vector 1 */
+#fuse {
+  position: absolute;
+  width: 210.27px;
+  height: 134.2px;
+  left: 48px;
+  top: 38px;
+}
+/* Vector 5 */
+#yellow-fuse-flame {
+  position: absolute;
+  width: 37px;
+  height: 33px;
+  left: 20px;
+  top: 141px;
+}
+/* Vector 6 */
+#orange-fuse-flame {
+  position: absolute;
+  width: 39px;
+  height: 35px;
+  left: 19px;
+  top: 140px;
+}
+
+/* Vector 7 */
+#red-fuse-flame {
+  position: absolute;
+  width: 42px;
+  height: 39px;
+  left: 17px;
+  top: 138px;
+}
+#explosion {
+  transition: linear 0.3s;
+  transform: scale(20);
+  width: 22rem;
+  height: 22rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.active {
+  display: none;
+}
+#yellow-explosion {
+  width: 270px;
+  height: 265px;
+  left: 40px;
+  top: 20px;
+  background: #ffffff;
+  z-index: 1;
+  position: absolute;
+}
+
+#orange-explosion {
+  width: 293px;
+  height: 290px;
+  left: 27px;
+  top: 20px;
+  z-index: 2;
+  position: absolute;
+}
+
+#red-explosion {
+  width: 313px;
+  height: 316px;
+  left: 10px;
+  top: 0;
+  z-index: 3;
+  position: absolute;
+}
+
+/* .fuse {
+  stroke-dasharray: 320;
+  stroke-dashoffset: 0;
+  animation: dash 7s linear;
+} */
+
+/* @keyframes dash {
+  from {
+    stroke-dashoffset: 320;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+ */
