@@ -1,0 +1,15 @@
+{
+  "name": "fizzbuzz-testing",
+  "version": "1.0.0",
+  "description": "Write a test against a function called fizzbuzz. If fizzbuzz is given a number divisible by 3 it should return fizz. Then write ur fizzbuzz function ensuring your test passes. 11:39 Extra credit write the buzz and fizzbuzz functionality as well. (Buzz if divisible by 5) (fizzbuzz if divisible by both 3 and 5)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.4.0"
+  }
+}
