@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #62c6f2;
+  overflow: hidden;
+}
+.container {
+  overflow: hidden;
+}
+.clouds1 {
+  position: absolute;
+  top: 5%;
+  width: 100vw;
+  height: 500px;
+  background-image: url("https://i.ibb.co/mh2FHSx/clouds.png");
+  background-repeat: no-repeat;
+  background-size: 10vw;
+  animation: animatedBackground 7.1s linear infinite;
+  animation-delay: -4s;
+}
+.clouds2 {
+  position: absolute;
+  top: 15%;
+  width: 100vw;
+  height: 300px;
+  background-image: url("https://i.ibb.co/mh2FHSx/clouds.png");
+  background-repeat: no-repeat;
+  background-size: 15vw;
+  animation: animatedBackground 9s linear infinite;
+  animation-delay: -2s;
+}
+.clouds3 {
+  position: absolute;
+  top: 20%;
+  width: 100vw;
+  height: 300px;
+  background-image: url("https://i.ibb.co/mh2FHSx/clouds.png");
+  background-repeat: no-repeat;
+  background-size: 18vw;
+  animation: animatedBackground 7.5s linear infinite;
+  animation-delay: -3s;
+}
+.clouds4 {
+  position: absolute;
+  top: 15%;
+  width: 100vw;
+  height: 500px;
+  background-image: url("https://i.ibb.co/mh2FHSx/clouds.png");
+  background-repeat: no-repeat;
+  background-size: 25vw;
+  animation: animatedBackground 10s linear infinite;
+  animation-delay: -2s;
+}
+.clouds5 {
+  position: absolute;
+  top: 25%;
+  width: 100vw;
+  height: 600px;
+  background-image: url("https://i.ibb.co/mh2FHSx/clouds.png");
+  background-repeat: no-repeat;
+  background-size: 35vw;
+  animation: animatedBackground 15s linear infinite;
+  animation-delay: -1s;
+}
+.clouds6 {
+  position: absolute;
+  top: 13%;
+  width: 100vw;
+  height: 300px;
+  background-image: url("https://i.ibb.co/mh2FHSx/clouds.png");
+  background-repeat: no-repeat;
+  background-size: 17vw;
+  animation: animatedBackground 9.3s linear infinite;
+  animation-delay: -2s;
+}
+.clouds7 {
+  position: absolute;
+  top: 19%;
+  width: 100vw;
+  height: 300px;
+  background-image: url("https://i.ibb.co/mh2FHSx/clouds.png");
+  background-repeat: no-repeat;
+  background-size: 5vw;
+  animation: animatedBackground 9s linear infinite;
+  animation-delay: -2s;
+}
+#man {
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  animation: man 12s cubic-bezier(0,.35,.55,1.1) infinite;
+  animation-delay: -5s;
+}
+.character {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  bottom: 0;
+}
+#man-message,
+#dumptruck-message {
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
+}
+.truck {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  bottom: 0;
+}
+#dumptruck {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 200px;
+  animation: dump 10s cubic-bezier(0, 1.52, 0.67, 0.28) infinite;
+  animation-delay: -5s;
+}
+
+@keyframes animatedBackground {
+  0% {
+    background-position: 105vw 0;
+  }
+  100% {
+    background-position: -105vw 0;
+  }
+}
+@keyframes dump {
+  0% {
+    transform: translateX(105vw);
+  }
+  100% {
+    transform: translateX(-105vw);
+  }
+}
+@keyframes man {
+  0% {
+    transform: translateX(-105vw);
+  }
+  100% {
+    transform: translateX(105vw);
+  }
+}
