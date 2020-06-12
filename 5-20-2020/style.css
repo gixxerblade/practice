@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(#92bfb1, #1c6e8c, #d96c06);
+}
+.head {
+  color: #ffffff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  width: 50%;
+  text-align: justify;
+}
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 35%;
+}
+.tg td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg .tg-ycr8 {
+  background-color: #ffffff;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-llyw {
+  background-color: #c0c0c0;
+  border-color: inherit;
+  text-align: center;
+  vertical-align: top;
+}

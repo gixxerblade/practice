@@ -1,0 +1,1 @@
+let attendance = document.getElementById
