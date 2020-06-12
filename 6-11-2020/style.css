@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    width: 700px;
+    height:700px;
+}
+svg{
+    width: 95%;
+    height: 95%;
+}
