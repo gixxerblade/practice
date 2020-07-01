@@ -1,0 +1,55 @@
+Script started on 2020-06-26 18:14:36-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="122" LINES="29"]
+]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ chmod d [K[K[K =x [K[K[K-[K=script [K[K[K[K[K[K[K[K=[K+script [K[K[K[K[K[K[Ks [K[Kx script [K.sh
+]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ ./script.sh 
+What directory would you like to search?
+./
+ls: cannot access 'dirname': No such file or directory
+]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ [K]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ [K]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ [K]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ /sc[K[K[K./script.sh 
+What directory would you like to search?
+./
+./script.sh: line 9: script.sh: command not found
+./script.sh: line 11: /: Is a directory
+]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ [K]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ ./script.sh 
+Which directory would you like to search?./ ./
+./script.sh: line 7: 1-15-20: command not found
+./script.sh: line 9: /: Is a directory
+]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ [K]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ ./script.sh 
+Which directory would you like to search?../
+./script.sh: line 7: .: ..: is a directory
+]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ [K]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ ./script.sh 
+Which directory would you like to search?../
+.	    10-23-19  11-15-19	12-6-19    2-24-2020  3-2-2020	 4-28-2020  6-12-2020  9-12-19
+..	    10-29-19  11-18-19	2-12-20    2-26-2020  3-3-2020	 4-30-2020  6-18-2020  9-13-19
+.git	    10-30-19  11-5-19	2-14-20    2-27-2020  3-4-2020	 5-18-2020  6-26-2020  Dev.toFacebookChallenge_12-11-19
+.gitignore  10-7-19   12-10-19	2-14-2020  2-28-2020  3-5-2020	 5-19-2020  7-18-19    README.md
+1-15-20     10-8-19   12-11-19	2-18-2020  3-11-2020  3-9-2020	 5-20-2020  7-8-19     codepen.Opposites
+1-28-2020   10-9-19   12-12-19	2-19-2020  3-12-2020  4-16-2020  6-10-2020  9-10-19    week_of_May_11_2020
+1-7-20	    11-12-19  12-3-19	2-21-2020  3-16-2020  4-23-2020  6-11-2020  9-11-19
+]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ ./script.sh 
+Which directory would you like to search?.
+.  ..  script.sh  typescript
+]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ ./script.sh 
+Which directory would you like to search?./haha
+ls: cannot access './haha': No such file or directory
+]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ [K]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ ./script.sh 
+Which directory would you like to search?./fe
+./script.sh: line 4: [: too many arguments
+ls: cannot access './fe': No such file or directory
+]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ [K]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ ./script.sh 
+Which directory would you like to search?./d
+ls: cannot access './d': No such file or directory
+Empty directory
+]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ ./script.sh 
+Which directory would you like to search?../
+.	    10-23-19  11-15-19	12-6-19    2-24-2020  3-2-2020	 4-28-2020  6-12-2020  9-12-19
+..	    10-29-19  11-18-19	2-12-20    2-26-2020  3-3-2020	 4-30-2020  6-18-2020  9-13-19
+.git	    10-30-19  11-5-19	2-14-20    2-27-2020  3-4-2020	 5-18-2020  6-26-2020  Dev.toFacebookChallenge_12-11-19
+.gitignore  10-7-19   12-10-19	2-14-2020  2-28-2020  3-5-2020	 5-19-2020  7-18-19    README.md
+1-15-20     10-8-19   12-11-19	2-18-2020  3-11-2020  3-9-2020	 5-20-2020  7-8-19     codepen.Opposites
+1-28-2020   10-9-19   12-12-19	2-19-2020  3-12-2020  4-16-2020  6-10-2020  9-10-19    week_of_May_11_2020
+1-7-20	    11-12-19  12-3-19	2-21-2020  3-16-2020  4-23-2020  6-11-2020  9-11-19
+]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ [K]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-26-2020[00m$ cd ..
+]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions[00m$ mkdir 6-25-2020
+]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions[00m$ cd 6-25-2020/
+]0;gixxerblade@SuperBrownman: /mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-25-2020[01;32mgixxerblade@SuperBrownman[00m:[01;34m/mnt/c/Users/sdcla/Desktop/Coding Tools/practice questions/6-25-2020[00m$ touch script.js
+]0;gixxerblade@SuperBrownman: /mnt
