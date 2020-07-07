@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Leave a suggestion</h1>
+      <hr />
+      <form action="" id="main-form" class="main-form">
+        <div class="greeting">
+          <input type="radio" name="greeting" id="mr" value="Mr." /><label
+            for=""
+            class="greeting1"
+            >Mr.</label
+          >
+          <input type="radio" name="greeting" id="mrs" value="Mrs." /><label
+            for=""
+            class="greeting2"
+            >Mrs.</label
+          >
+          <input type="radio" name="greeting" id="ms" value="Ms." /><label
+            for=""
+            class="greeting3"
+            >Ms.</label
+          >
+        </div>
+        <div class="name-email">
+          <div class="name">
+            <label for="name" class="name-label">Full Name</label
+            ><input type="text" name="name" id="name" />
+          </div>
+          <div class="email">
+            <label for="email" class="name-label">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+        </div>
+        <hr />
+        <div class="message">
+          <label for="subject">Subject </label
+          ><input type="text" name="subject" id="subject" />
+          <label for="text">Enter a message: </label>
+          <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit" id="submit">Enter</button>
+      </form>
+      <div class="results">
+        <h2 class="display-results">Form Data</h2>
+        <pre class="results-code">
+          <code id="results-display"></code>
+        </pre>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
