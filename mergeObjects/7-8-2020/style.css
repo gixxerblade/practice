@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+}
+body::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  height: 100vh;
+  opacity: 0.5;
+  background-image: url("https://i.ibb.co/cgXSHtp/meal.jpg");
+}
+#container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100vh;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+}
+#input-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  margin: 5px;
+}
+#input-container label {
+  margin: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#input-container input {
+  font-size: 3rem;
+  width: 200px;
+  text-align: center;
+}
+#submit {
+  background: #15d798;
+  border-radius: 11px;
+  padding: 20px 45px;
+  color: #ffffff;
+  display: inline-block;
+  font: normal bold 19px/1 "Open Sans", sans-serif;
+  text-align: center;
+  margin: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input:focus {
+  outline: none;
+}
+.symbol {
+  border: 1px outset #ccc;
+  font-size: 3rem;
+  background-color: #ffffff;
+}
+.symbol input {
+  border: 0;
+  z-index: 2;
+}
