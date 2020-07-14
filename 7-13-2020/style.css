@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: o;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+label,
+button {
+  margin: 10px;
+}
+

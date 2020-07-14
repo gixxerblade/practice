@@ -26,7 +26,10 @@ Constraints
 Output Format
 For each grade of the n grades, print the rounded grade on a new line.
 
-Sample Input - 
+
+I/O:
+
+Sample Input - array
 4
 73
 67
@@ -35,7 +38,44 @@ Sample Input -
 
 Sample Output - 
 75 - 73 rounded up
-67 - 
-40
-33
+67 - not rounded. > 3 to next multiple of 5
+40 - 38 rounded up
+33 - not rounded. < 38
 */
+
+/**
+ *  Diagramming
+ *  function takes input students grades as an array
+ *      create new array to hold new grades
+ *      iterate through grades
+ *          if grade is less than 38 leave grade leave alone
+ *          otherwise if grade are less than 3 from a multiple of 5
+ *              round up
+ *
+ *
+ */
+
+/**
+ * Pseudocode
+ *
+ * function roundGrades(grade)
+ *
+ *     if grade < 38 return grade
+ *     if grade is grade % 5 > 2
+ *         grade = Math.ceil(grade/5) * 5
+ */
+
+let roundGrades = (grades) => {
+  let newGrades = [];
+  for (let i = 0; i < grades.length; i++) {
+    console.log(grades[i]);
+    if (grades[i] < 38) newGrades.push(grades[i]);
+    else if (grades[i] % 5 > 2) {
+      newGrades.push(Math.ceil(grades[i] / 5) * 5);
+    } else newGrades.push(grades[i]);
+  }
+  return newGrades;
+};
+let grades = [73, 67, 38, 33];
+
+console.log(roundGrades(grades));
