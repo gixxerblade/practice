@@ -6,4 +6,6 @@ They can be found [here](../practice%20questions/VWC%20Coding%20Challenges)
 [HackerRank Practice Questions](https://www.hackerrank.com/) focuses on competitive programming challenges
 They can be found [here](../practice%20questions/HackerRank%20Problems)
 
+[Project Euler](https://projecteuler.net/) problems [here](ProjectEuler)
+
 [Interview Practice](Interview%20Practice) to learn how an interview question may be asked.
