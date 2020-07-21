@@ -22,9 +22,9 @@ A single integer, , denoting the size of the staircase.
 
 Output Format
 
-Print a staircase of size  using # symbols and spaces.
+Print a staircase of size n using # symbols and spaces.
 
-Note: The last line must have  spaces in it.
+Note: The last line must have 0 spaces in it.
 
 Sample Input
 
@@ -40,6 +40,17 @@ Sample Output
 Explanation
 
 The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of n = 6.
-
-
 */
+
+let staircase = (n) => {
+  for (let i = 0; i <= n; i++) {
+    output = "";
+    if (i > 0) {
+      // n = steps n-i pads the right-aligned stairs
+      output += " ".repeat(n - i) + "#".repeat(i);
+      console.log(output);
+    }
+  }
+};
+
+console.log(staircase(4));
