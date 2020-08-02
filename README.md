@@ -8,4 +8,6 @@ They can be found [here](../practice%20questions/HackerRank%20Problems)
 
 [Project Euler](https://projecteuler.net/) problems [here](ProjectEuler)
 
+[Runcode.ninja](https://runcode.ninja/) problems [here](runcode_ninja)
+
 [Interview Practice](Interview%20Practice) to learn how an interview question may be asked.
