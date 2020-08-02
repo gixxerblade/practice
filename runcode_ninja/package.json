@@ -1,0 +1,16 @@
+{
+  "name": "ex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Evenly_Divisible.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "hex2ascii": "0.0.3"
+  }
+}
