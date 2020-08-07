@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+  
+    "name": "What's the URL",
+    "description": "This extension will show your current URL",
+    "version": "1.0",
+  
+    "browser_action": {
+     "default_icon": "icon.png",
+     "default_popup": "findURL.html"
+    },
+    "permissions": [
+     "activeTab"
+     ]
+  }
+  
