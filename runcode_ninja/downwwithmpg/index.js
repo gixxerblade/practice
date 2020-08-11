@@ -22,11 +22,12 @@ rl.on("line", (line) => {
     let num = el.split(",");
     total = (num[1] - num[0]) / num[2];
     vehicle = num[3];
-    console.log(vehicle.padStart(longest.length), +total.toFixed(2));
+    console.log(vehicle.padStart(10), +total.toFixed(2));
   });
 });
 
-/* 
+/*
+INCORRECT...WILL I EVER FIGURE ONE OUT?!? 
 Description
 Take the given files as input and print the car name and the associate miles per gallon using the information given. Following the given format and note that the longest vehicle name will never exceed the length of Highlander.
 
