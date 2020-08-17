@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/89e2f8287a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Copy Stuff</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Copy This</h1>
+      <div class="btn-container">
+        <input
+          placeholder="Type something here"
+          type="text"
+          name="text"
+          id="text"
+          class="text"
+        />
+        <button id="copy" type="submit"><i class="fas fa-copy"></i></button>
+        <i class="fas fa-arrow-left"> Click to copy</i>
+      </div>
+      <div class="paste-container">
+        <textarea
+          type="text"
+          placeholder="Paste it here"
+          class="textarea"
+          name="textarea"
+          id="pastearea"
+        ></textarea>
+        <button id="paste" type="submit"><i class="fas fa-copy"></i></button>
+        <i class="fas fa-arrow-left" id="pastebtn"> Click to paste</i>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
