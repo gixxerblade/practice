@@ -12,3 +12,4 @@ fs.readFile(image, (err, data) => {
   let str = decoded.match(/(CWN\{(.*?)\})/)[0];
   console.log(str);
 });
+// DONE!!

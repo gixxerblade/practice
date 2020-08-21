@@ -30,3 +30,5 @@ let csvToArrayObj = (csv) => {
 };
 
 console.log(csvToArrayObj("./addresses.csv"));
+console.log(csvToArrayObj("./values.csv"));
+
