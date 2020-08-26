@@ -1,4 +1,4 @@
-let minimumNumber = (n, password) => {
+ let minimumNumber = (n, password) => {
   //password = password.split(" ");
   let count = 0;
   let lower = password.match(/[a-z]/g);
@@ -18,4 +18,6 @@ console.log(minimumNumber(4, "4700"));
 console.log(minimumNumber(4, "goxg"));
 console.log(minimumNumber(4, "790"));
 console.log(minimumNumber(7, "AUzs-nV"));
-console.log(minimumNumber(11, "#HackerRank"));
+console.log(minimumNumber(11, "#HackerRank")); 
+
+
