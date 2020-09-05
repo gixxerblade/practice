@@ -28,15 +28,28 @@ Input: "{[]}"
 Output: true
  */
 
-let isValid = (s) => {
-  if (s.length === 0) return true;
-  let re = /(\(\))|(\[\])|({})+/g;
-  while (s.match(re)) {
-    s = s.split("()").join("").split("[]").join("").split("{}").join("");
+function isMatchingBrackets(str) {
+  let arr = [];
+  const brackets = new Map();
+  brackets.set(")", "(");
+  brackets.set("]", "[");
+  brackets.set("}", "{");
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "(" || str[i] === "[" || str[i] === "{") {
+      arr.push(str[i]);
+    } else {
+      if (arr[arr.length - 1] === brackets.get(str[i])) {
+        arr.pop();
+      }
+    }
   }
-  return !s;
-};
-console.log(isValid("()"));
-console.log(isValid("(]"));
-console.log(isValid(""));
-console.log(isValid("([]"));
+  return arr.length === 0;
+}
+
+console.log(isMatchingBrackets("(){}")); // returns true
+console.log(
+  isMatchingBrackets(
+    "[{()()}({[]})]({}[({})])((((((()[])){}))[]{{{({({({{{{{{}}}}}})})})}}}))[][][]"
+  )
+); // returns true
+console.log(isMatchingBrackets("({(()))}}")); // returns false

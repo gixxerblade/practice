@@ -1,4 +1,4 @@
-function isOdd(int) {
+/* function isOdd(int) {
   return (int & 1) === 1;
 }
 
@@ -16,3 +16,12 @@ let checkOddEven = (num) => {
   }
 };
 checkOddEven(100);
+
+ */
+var merge = function (nums1, m, nums2, n) {
+  nums1.length = m;
+  nums2.length = n;
+  nums1 = nums1.concat(nums2);
+  return nums1.sort((a, b) => a - b);
+};
+console.log(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));

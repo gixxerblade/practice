@@ -29,13 +29,25 @@ console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
  */
 
 let removeDuplicates = (nums) => {
-  let temp,
-    arr = [];
+  if (nums.length === 0) return 0;
+  let n = 0;
   for (let i = 0; i < nums.length; i++) {
-    if (nums[i] !== temp) arr.push(nums[i]);
-    temp = nums[i];
+    if (nums[i] !== nums[n]) {
+      n++;
+      nums[n] = nums[i];
+    }
   }
-  return nums.length && arr;
+  return n + 1;
+};
+
+let remove = (nums) => {
+  let arr = [];
+  for (let i = 0; i < nums.length; i++) {
+    if (arr.indexOf(nums[i]) === -1) arr.push(nums[i]);
+  }
+  return (nums = arr);
 };
 console.log(removeDuplicates([1, 1, 2]));
 console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
+console.log("Remove: ", remove([1, 1, 2]));
+console.log("Remove: ", remove([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));

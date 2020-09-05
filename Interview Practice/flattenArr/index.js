@@ -6,7 +6,7 @@ let flattenArray = (array) => {
   for (let i = 0; i < array.length; i++) {
     !Array.isArray(array[i])
       ? newArray.push(array[i])
-      : newArray = newArray.concat(flattenArray(array[i]));
+      : (newArray = newArray.concat(flattenArray(array[i])));
   }
   return newArray;
 };

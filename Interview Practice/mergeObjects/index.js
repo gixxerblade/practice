@@ -1,4 +1,5 @@
-// given these two objects write a function that merges them similar to how the spread operator would work. (do not use spread)
+// given these two objects write a function that merges them 
+// similar to how the spread operator would work. (do not use spread)
 const a = {
   a: {
     b: "hello",
@@ -45,3 +46,4 @@ const mergeObjects = (obj1, obj2) => {
 };
 
 console.log(mergeObjects(a, b));
+

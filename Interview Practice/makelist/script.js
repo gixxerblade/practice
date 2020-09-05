@@ -1,4 +1,4 @@
-const list = document.querySelector(".list");
+//const list = document.querySelector(".list");
 
 const data = [
   {
@@ -36,3 +36,4 @@ let makeList = ({ type, props }) => {
   }
 };
 console.log(makeList(...data));
+
