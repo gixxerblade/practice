@@ -1,3 +1,46 @@
+// Find the missing number
+let arrayOfIntegers = [2, 5, 1, 4, 9, 6, 3, 7];
+let upperBound = 9;
+let lowerBound = 1;
+
+let findNum = (array, upper, lower) => {
+  let sumOfAll = 0;
+  for (let i = 0; i < array.length; i++) {
+    sumOfAll += array[i];
+  }
+  let upperSum = (upper * (upper + 1)) / 2;
+  let lowerSum = (lower * (lower - 1)) / 2;
+  let theoreticalSum = upperSum - lowerSum;
+  return theoreticalSum - sumOfAll;
+};
+
+console.log(findNum(arrayOfIntegers, upperBound, lowerBound), 8); //8
+
+// fibonacci
+
+let fib = (num) => {
+  if (num === 0) return 0;
+  if (num === 1) return 1;
+  else return fib(num - 1) + fib(num - 2);
+};
+console.log(fib(10), 55);
+
+// factorial
+
+let factorial = (num) => {
+  for (let i = num - 1; i > 0; i--) {
+    num *= i;
+  }
+  return num;
+};
+console.log(factorial(6), 720);
+
+let fact = (num) => {
+  if (num === 1) return 1;
+  else return num * fact(num - 1);
+};
+console.log(fact(6), 720);
+
 /**
  * Task description: Write a method that creates a new array with given values
  * Expected Result: (3, 'a') => ['a', 'a', 'a']
@@ -41,7 +84,7 @@ let reverse = (array) => {
   //builtin method:  return array.reverse()
 };
 
-console.log(reverse([1, 2, 3, 4, 5, 6]));
+console.log(reverse([1, 2, 3, 4, 5, 6]), "reversed");
 
 /**
  * Task description: Write a method that clears array from all unnecessary elements, like false, undefined, empty strings, zero, null
