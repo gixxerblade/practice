@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "level": "easy",
+    "question": "Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200 (both included). The numbers obtained should be printed in a comma-separated sequence on a single line."
+  },
+  {
+    "id": 2,
+    "level": "easy",
+    "question": "Write a program which can compute the factorial of a given numbers. The results should be printed in a comma-separated sequence on a single line."
+  },
+  {
+    "id": 3,
+    "level": "easy",
+    "question": "Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array. The element value in the i-th row and j-th column of the array should be i*j."
+  },
+  {
+    "id": 4,
+    "level": "easy",
+    "question": "Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically. \rSuppose the following input is supplied to the program: \nwithout,hello,bag,world \nThen, the output should be: \nbag,hello,without,world"
+  }
+]
