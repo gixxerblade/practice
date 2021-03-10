@@ -16,4 +16,18 @@ const _ = {
   },
 };
 
-console.log(_.pull(array, "a", "c"));
+const __ = {
+  pull: (arr: any[], ...itemsToPull: any) => {
+    for (let i = 0; i < arr.length; i++) {
+      if (itemsToPull.indexOf(arr[i]) > -1) {
+        arr.splice(i, 1);
+        --i;
+      }
+    }
+    return arr;
+  },
+};
+
+__.pull(array, "a", "c");
+console.log(array);
+console.log(__.pull(array, "a", "c"));
