@@ -18,20 +18,29 @@ let checkOddEven = (num) => {
 checkOddEven(100);
 
  */
-var merge = function (nums1, m, nums2, n) {
-  nums1.length = m;
-  nums2.length = n;
-  nums1 = nums1.concat(nums2);
-  return nums1.sort((a, b) => a - b);
-};
-console.log(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
+// var merge = function (nums1, m, nums2, n) {
+//   nums1.length = m;
+//   nums2.length = n;
+//   nums1 = nums1.concat(nums2);
+//   return nums1.sort((a, b) => a - b);
+// };
+// console.log(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
 
-const stringWithBlank = "  a";
+// const stringWithBlank = "  a";
 
-const trimSpaces = (str) => {
-  let trimmed = str.trim();
-  trimmed.length ? trimmed : null
-  return trimmed
-};
+// const trimSpaces = (str) => {
+//   let trimmed = str.trim();
+//   trimmed.length ? trimmed : null
+//   return trimmed
+// };
 
-console.log(trimSpaces(stringWithBlank));
+// console.log(trimSpaces(stringWithBlank));
+
+const fizzBuzz = (lower, upper) => {
+  const values = [,,'fizz',,'buzz','fizz',,,'fizz','buzz',,'fizz',,,'fizzbizz'];
+  for (lower = 0; lower < upper; lower++) {
+    return values[i++ % 15] || i;
+  }
+}
+
+fizzBuzz()
