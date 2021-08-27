@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+    width: 250px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+#input {
+    flex: 0.7
+}
+.btn {
+    flex: .2
+}
+.item-wrapper {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.item{
+    height: 16px;
+    width: 32px;
+    border: 1px red solid;
+    margin: 5px 16px 0 16px;
+}
