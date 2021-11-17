@@ -28,8 +28,11 @@
     flex-wrap: wrap;
 }
 .item{
-    height: 16px;
-    width: 32px;
+    height: 2rem;
+    width: 4rem;
     border: 1px red solid;
     margin: 5px 16px 0 16px;
+}
+.red {
+    background-color: red;
 }
