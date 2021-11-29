@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: url('./usa.jpg');
+  background-size: cover;
+}
+.container {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 100vh;
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.highlight {
+  background-color: #0A3161;
+  color: #B31942;
+  transition: .5s linear;
+}

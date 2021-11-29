@@ -1,24 +1,14 @@
 // Given the size of a spiral, calcuale the sum of the four corners.
 
-const value1 = process.argv[2];
-const test1 = [
-  [1, 2],
-  [3, 4],
-];
-const test2 = [
-  [7, 8, 9],
-  [6, 1, 2],
-  [5, 4, 3],
-];
-const spiralSum = (arr) => {
-  const res = [];
-  for (let i = 0; i < arr.length; i++) {
-    const element = arr[i];
-    for (let j = 0; j < element.length; j++) {
-      const el = element[j];
-      console.log(el);
-    }
+const value1 = '2x2'
+
+const spiralSum = (val) => {
+  const size = parseInt(val[0])
+  const len = Math.pow(size, 2)
+  for (let i = 1; i <= len; i++) {
+    console.log(4 * Math.pow(i, 2) + 3 * i + 1)
   }
 };
 
-console.log(spiralSum(test1));
+console.log(spiralSum('4x4`'));
+//4*Math.pow(i,2) + 3*i + 1
