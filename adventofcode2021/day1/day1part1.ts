@@ -1,7 +1,8 @@
 /**
  * https://adventofcode.com/2021/day/1
  */
-import {input} from './day1input'
+import { input } from './day1input'
+import { fetchInput } from '../fetchInput.js'
 const testValues = [
   199,
   200,
@@ -14,7 +15,8 @@ const testValues = [
   260,
   263
 ]
-
+const i = fetchInput('https://adventofcode.com/2021/day/1/input')
+console.log(i)
 const day1 = (arr: number[]) => {
   let count = 0
   arr.forEach((val, i, arr) => {
