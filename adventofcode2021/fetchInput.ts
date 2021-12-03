@@ -4,7 +4,7 @@ require('dotenv').config();
 export const fetchInput = async (url) => {
   const result = await fetch(url, {
     headers: {
-      cookie: process.env.COOKIE
+      Cookie: process.env.COOKIE
     }
   })
   return await result.text()
