@@ -40,4 +40,6 @@ const part2 = (crabs) => {
   return cost;
 };
 console.log(part1(crabs));
+console.time()
 console.log(part2(crabs));
+console.timeEnd()

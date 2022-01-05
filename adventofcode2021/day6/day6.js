@@ -30,6 +30,5 @@ const part2 = (array) => {
   }
   return queue.reduce((a, b) => a + b);
 };
-
 console.log(part1(school));
-console.log(part2(school));
+console.log(part2(school))
