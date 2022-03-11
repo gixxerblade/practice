@@ -1,14 +1,12 @@
-//Write a JavaScript program to generate a random hexadecimal color code
+const delay = (ms) => {
+  return new Promise((resolve, reject) => setTimeout(resolve, ms));
+};
 
-let randRGB = () => {
-  return (rgb = Math.floor(Math.random() * 256));
+const test = async () => {
+  for (let i = 0; i < 5; i++) {
+    await delay(1000);
+    console.log('hail hydra');
+  }
 };
-let randHexColors = () => {
-  let r = randRGB();
-  let g = randRGB();
-  let b = randRGB();
-  let bin = (r << 16) | (g << 8) | b;
-  bin.toString(16).length < 6 && randHexColors()
-  return `#${bin.toString(16).toUpperCase()}`;
-};
-console.log(randHexColors());
+
+test();
