@@ -32,7 +32,7 @@ let checkAnagrams = (str1, str2) => {
 
   // create character map to count the frequency of letters
   // using key:value pairs where key = letter, value = frequency
-  let charMap = (string) => {
+  const charMap = (string) => {
     let charObj = {};
     for (let char of string) {
       charObj[char] = charObj[char] + 1 || 1;
@@ -52,3 +52,4 @@ let checkAnagrams = (str1, str2) => {
 };
 console.log(checkAnagrams("Cinema", "iceman"));
 console.log(checkAnagrams("Dormitory ", "dirty room"));
+

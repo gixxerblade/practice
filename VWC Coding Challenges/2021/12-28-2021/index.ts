@@ -9,7 +9,7 @@
  */
 
 export type N = number
-export const gcd = (a: N, b: N): N => {
+export const gcd = <T extends number>(a: T, b: T) => {
   if (a === 0) {
     return b
   }

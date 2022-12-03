@@ -21,5 +21,12 @@ const gcd_more_than_two_numbers = (arr: N[]): N => {
   return result
 }
 
-console.log(gcd_more_than_two_numbers([3,15,27]));
-console.log(gcd_more_than_two_numbers([5,10,15,25]));
+const GCDMoreThanTwo = (arr: N[]): N => {
+  return arr.reduce((acc, curr) => gcd(acc, curr))
+}
+
+
+// console.log(gcd_more_than_two_numbers([3,15,27]));
+// console.log(gcd_more_than_two_numbers([5,10,15,25]));
+console.log(GCDMoreThanTwo([3, 15, 27]));
+console.log(GCDMoreThanTwo([5, 10, 15, 25]));

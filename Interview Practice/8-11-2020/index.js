@@ -36,9 +36,7 @@ const data2 = [1, 2, 3];
 console.log(reverse(data2)); // [3, 2, 1]
 
 let unique = (arr) => {
-  let special = [];
-  for (const i of arr) {
-  }
+
 }; /* 
 const fromPairs = (array) => {
   let obj = {};
