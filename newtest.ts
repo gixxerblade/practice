@@ -23,4 +23,3 @@ const weekend = (dateStr: string | number | Date) => {
 console.log(weekend('Nov 15, 2014'));
 console.log(weekend('July 30, 2021'));
 console.log(weekend('July 31, 2021'));
-
