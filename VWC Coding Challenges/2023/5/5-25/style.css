@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ height: 100vw;
+ padding: 16px;
+}
+
+.error {
+  background-color: red;
+  width: fit-content;
+}
+
+.selectables {
+  height: 12vw;
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box {
+  top: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.container {
+  height: 50px
+}

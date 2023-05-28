@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Enter </h3>
+    <form action="" enctype="multipart/form-data" id="form">
+      <label for="toX">
+        To X
+        <input type="number" id="toX">
+      </label>
+      <label for="toY">
+        To Y
+        <input type="number" id="toY">
+      </label>
+      <label for="duration">
+        Duration
+        <input type="number" id="duration">
+      </label>
+      <label for="select">
+        Select a box
+        <select id="select"></select>
+      </label>
+      <button type="submit">Execute</button>
+    </form>
+  </div>
+  <p class="error"></p>
+  <div class="selectables">
+    <div class="box">
+      <p class="text">Box 1</p>
+    </div>
+    <div class="box">
+      <p class="text">Box 2</p>
+    </div>
+    <div class="box">
+      <p class="text">Box 3</p>
+    </div>
+    <div class="box">
+      <p class="text">Box 4</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
