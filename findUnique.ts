@@ -15,5 +15,3 @@ const string = 'udoucoifmplrvxovfnnbntbybyqcqmdcuatvouvshqekyxivabrbgykdnwfaoret
 
 // console.log(findUnique(string));
 // console.log(findUnique('leetcode'));
-
-
