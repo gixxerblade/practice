@@ -169,14 +169,14 @@ Example:
 
  */
 
-const isPrime = (num: number) => {
-  for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
-    if (num % i === 0) {
-      return false;
-    }
-  }
-  return num > 1 && num !== 0;
-}
+// const isPrime = (num: number) => {
+//   for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
+//     if (num % i === 0) {
+//       return false;
+//     }
+//   }
+//   return num > 1 && num !== 0;
+// }
 
 // Using bitwise operator '&' we can determine odd or even
 // All odd binary numbers end in 1
@@ -187,36 +187,36 @@ const isPrime = (num: number) => {
 // 0 0 0 1 - 1
 // ---------
 // 0 0 0 1 < last number is 1 so 3 is odd
-const isOdd = (num: number) => num & 1;
+// const isOdd = (num: number) => num & 1;
 
-type WhichSet = 'odd' | 'even' | 'prime';
-const betweenNums = (start: number, end: number, whichSet: WhichSet) => {
-  let arr: number[] = [];
-  const length = Math.abs(start - end) - 1;
-  if (start < end) {
-    arr = Array.from({ length }, (_, idx) => {
-      return idx + start + 1
-    });
-  } else {
-    arr = Array.from({ length }, (_, idx) => {
-      return idx + end + 1
-    });
-  }
-  switch (whichSet) {
-    case 'odd':
-      return arr.filter((n) => isOdd(n))
-    case 'even':
-      return arr.filter((n) => !isOdd(n))
-    // defaults to 'prime'
-    default:
-      return arr.filter((n) => isPrime(n));
-  }
-}
+// type WhichSet = 'odd' | 'even' | 'prime';
+// const betweenNums = (start: number, end: number, whichSet: WhichSet) => {
+//   let arr: number[] = [];
+//   const length = Math.abs(start - end) - 1;
+//   if (start < end) {
+//     arr = Array.from({ length }, (_, idx) => {
+//       return idx + start + 1
+//     });
+//   } else {
+//     arr = Array.from({ length }, (_, idx) => {
+//       return idx + end + 1
+//     });
+//   }
+//   switch (whichSet) {
+//     case 'odd':
+//       return arr.filter((n) => isOdd(n))
+//     case 'even':
+//       return arr.filter((n) => !isOdd(n))
+//     // defaults to 'prime'
+//     default:
+//       return arr.filter((n) => isPrime(n));
+//   }
+// }
 
-console.log(betweenNums(3, 11, 'odd'));
-console.log(betweenNums(3, 11, 'even'));
-console.log(betweenNums(3, 11, 'prime'));
+// console.log(betweenNums(3, 11, 'odd'));
+// console.log(betweenNums(3, 11, 'even'));
+// console.log(betweenNums(3, 11, 'prime'));
 
-console.log(betweenNums(15, 1, 'odd'));
-console.log(betweenNums(15, 1, 'even'));
-console.log(betweenNums(15, 1, 'prime'));
+// console.log(betweenNums(15, 1, 'odd'));
+// console.log(betweenNums(15, 1, 'even'));
+// console.log(betweenNums(15, 1, 'prime'));

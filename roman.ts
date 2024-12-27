@@ -12,7 +12,7 @@ const isRoman = (letter: string): letter is Roman => {
 const romanNumerConverter = (s: string): number | string => {
   let regex = new RegExp(/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/);
   const isValidRomanNumeral = regex.test(s) && s.split('').every((l) => isRoman(l));
-  const romanMap = {
+  const romanMap: Record<string, number> = {
     I: 1,
     V: 5,
     X: 10,

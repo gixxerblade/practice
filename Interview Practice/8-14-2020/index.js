@@ -82,7 +82,7 @@ function Dog(name) {
   this.name = name;
 }
 // Need prototype but why?
-Dog.prototype.bark = function () {
+Dog.bark = function () {
   console.log(this.name + " says woof");
 };
 
